@@ -175,7 +175,7 @@ body{
         left: 0px;
         top:300px ;
     }
-    #colections{
+    .colection{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         position:relative;
