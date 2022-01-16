@@ -9,46 +9,54 @@
     <script src="https://kit.fontawesome.com/e3a36821b4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <Header class="header">
-        <nav>
-            <span class="headline">
-                <h3>Influencer  products</h3>
-            </span>
-            <span class="anchor">
-                <a href="">Home</a>
-                <a href="">Products</a>
-                <a href="">Sign up</a>
-                <a href="">Log in</a>
-                <a href=""><i class="fas fa-search"></i></a>
-            </span>
-            <span><a href=""><i id="cart" class=" fas fa-shopping-cart"></i></a></span>
-            <span class="menu"><i class="fas fa-bars"></i></span>
-        </nav>
+    <Header >
+        <section class="header">
+            <div >
+                <span class="headline">
+                    <h3>Influencer  products</h3>
+                </span>
+            </div>
+            <div class="icon">
+                <span class="anchor">
+                    <a href="">Home</a>
+                    <a href="">Products</a>
+                    <a href="">Sign up</a>
+                    <a href="">Log in</a>
+                    <a href=""><i class="fas fa-search"></i></a>
+                </span>
+                <span class="menu">
+                    <a href=""><i id="cart" class=" fas fa-shopping-cart"></i></a>
+                    <a href=""><i id="bar" class="fas fa-bars"></i></a>
+                </span>
+            </div>
+        </section>
     </Header>
     <main class="main">
-        <section class="start-section">
-            <article class="top-blog">
+        <section id="header-sections" class="header-section">
+            <article id="top-blogs" class="top-blog">
                 <span id="top" class="top-line ">
                     Start your Journey as Influencer
                 </span>
-                <p id="para" class="blogs">Good Quality Cheap Price 4K 48MP 16X Digital Zoom Photo Camera 3.2inch Digital Cameras for sale</p>
-                <button id="preebook-now" class="preebook">Preebook now
-                    <a href=""><i class="fas fa-arrow-right"></i></a>
-                </button>
+                <span class="button-line">
+                    <p>Good Quality Cheap Price 4K 48MP 16X Digital Zoom Photo Camera 3.2inch Digital Cameras for sale</p>
+                    <button class="preebook">Preebook now
+                        <a href=""><i class="fas fa-arrow-right"></i></a>
+                    </button>
+                </span>
             </article>
-            <article class="images">
+            <article id="images" class="image">
                 <img src="images/main-camera.png" alt="">
             </article>
         </section>
         <br>
-        <section id="logo" class="logos">
-            <div><img src="logos/Alibaba.svg" alt=""></div>
-            <div><img src="logos/Amazon.svg" alt=""></div>
-            <div><img src="logos/Daraz.pk Logo.svg" alt=""></div>
-            <div><img src="logos/Ebay.svg" alt=""></div>
-            <div><img src="logos/Rakuten.svg" alt=""></div>
-            <div><img src="logos/Target.svg" alt=""></div>
-            <div><img src="logos/Walmart.svg" alt=""></div>
+        <section id="logos" class="logo">
+            <img src="logos/Alibaba.svg" alt="">
+            <img src="logos/Amazon.svg" alt="">
+            <img src="logos/Daraz.pk Logo.svg" alt="">
+            <img src="logos/Ebay.svg" alt="">
+            <img src="logos/Rakuten.svg" alt="">
+            <img src="logos/Target.svg" alt="">
+            <img src="logos/Walmart.svg" alt="">
         </section>
         <br>
         <h2 class="Popular">Popular Collection</h2>
@@ -290,9 +298,17 @@
             </article>
         </section>
         <section>
-            <nav>
+            <div >
                 <a id="see" class="see-more" href="">See More<i class="fas fa-arrow-right"></i></a>
-            </nav>
+            </div>
+        </section>
+        <section class="login">
+            <form action="" class="login-form">
+                <h2>Login</h2>
+                <input type="email" name="email" id="" placeholder="Enter your email" required>
+                <input type="password" name="password" id="" placeholder="Enter your password" required>
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </main>
     <footer id="foot" class="footer">

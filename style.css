@@ -11,201 +11,167 @@ body{
 
 }
 
-/* media queries */
+/*-----------------------------
+----------- media queries-------
+-------------mobile----------- */
+
 @media  only screen and (max-width:688px)
 {
-
-
+    /* header style */
     .header{
-        margin-left: 0px;
-        margin-right: 0px;
+        grid-template-columns: repeat(1,1fr);
     }
-    #cart{
-        font-size: 10px;
-        position: relative;
-        left: 80px;
-    }
-    .anchor{
+    .anchor a{
         display: none;
     }
     .headline{
-        font-size: 14px;
-        position:relative;
-        top:-30px;
-        left: 45px;
+        font-size: 24px;
     }
-    .menu{
+    #bar{
         position:relative;
-        left: -300px;
+        right: 380px;
+        bottom: 40px;
         
     }
-    .images{
-        background-image: url(images/Circle\ design.svg);
-        position:relative;
-        left: 5px;
-        top:-50px ;
-        height: 250px;
-        width: 250px;
+    .top-blog{
+        margin-left: 20px;
     }
-    .images img{
-        height: 250px;
-        width: 250px;
-    }
-    .start-section{
-        position: absolute;
-        left: 100px;
-        top: 180px;
+    /* main style */
+    #header-sections{
         display:flex;
-        flex-direction:column-reverse;
+        flex-direction: column-reverse;
+        margin-left:50px;
+    
+    }
+    #images{
+        margin-left:0px;
+        width: 300px;
+    }
+    .image img{
+        height: 300px;
+        width: 300px;
     }
     #top{
-        font-size: 34px;
-        position:relative;
-        left: 5px;
-        top:-50px ;
-        text-align: center;
+        font-size: 24px;
     }
-    #para{
-        position:relative;
-        left: 5px;
-        top:-50px ;
+    #top-blogs{
+        width: 300px;
     }
-    #preebook-now{
-        position:relative;
-        left: 50px;
-        top:-50px ;
+
+    /* logo style */
+    #logos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin:0;
     }
-    #logo{
-        display:none ;
+    .logo img{
+        height: 100px;
+        width: 100px;
     }
-    .Popular{
-        font-size: 28px;
-        text-align: center;
-        position:relative;
-        left: 0px;
-        top:500px ;
-    }
+    /* collection style */
     #colections{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        position:relative;
-        left:-80px;
-        top:500px ;
+        margin: 80px;
+        width: 300px;
     }
+    /* see more style */
     #see{
-        position:relative;
-        left:300px;
-        top:500px ;
+        position: relative;
+        left:400px;
+        top: 20px;
     }
-    #foot{
-        position:relative;
-        left:0px;
-        top:700px ;
-    }
-    
 }
+
+/*----------------------------
+---------- media quaries----
+----------tablet--------------- */
+
 @media  only screen and (max-width:1024px)
 {
-    .header{
-        margin-left: 0px;
-        margin-right: 0px;
+       /* header style */
+       .header{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .anchor a{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
     }
     #cart{
-        font-size: 10px;
         position: relative;
-        left: 100px;
-    }
-    .anchor{
-        display: none;
-    }
+        top: 110px;
+        right: 105px;
+    }   
     .headline{
-        font-size: 34px;
-        position:relative;
-        top:-30px;
-        left: 45px;
+        font-size: 24px;
     }
-    .menu{
+    #bar{
         position:relative;
-        left: -300px;
+        right: 500px;
+        bottom: 40px;
         
     }
-    .images{
-        background-image: url(images/Circle\ design.svg);
-        position:relative;
-        left: 5px;
-        top:-50px ;
-        height: 250px;
-        width: 250px;
+    .top-blog{
+        margin-left: 20px;
     }
-    .images img{
-        height: 250px;
-        width: 250px;
-    }
-    .start-section{
-        position: absolute;
-        left: 100px;
-        top: 180px;
+    /* main style */
+    #header-sections{
         display:flex;
-        flex-direction:column-reverse;
+        flex-direction: column-reverse;
+        margin-left:50px;
+    
+    }
+    #images{
+        margin-left:0px;
+        width: 300px;
+    }
+    .image img{
+        height: 300px;
+        width: 300px;
     }
     #top{
-        font-size: 34px;
-        position:relative;
-        left: 5px;
-        top:-50px ;
-        text-align: center;
+        font-size: 24px;
     }
-    #para{
-        position:relative;
-        left: 5px;
-        top:-50px ;
+    #top-blogs{
+        width: 300px;
     }
-    #preebook-now{
-        position:relative;
-        left: 50px;
-        top:-50px ;
+
+    /* logo style */
+    #logos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin:0;
     }
-    #logo{
-        display:none ;
+    .logo img{
+        height: 100px;
+        width: 100px;
     }
-    .Popular{
-        font-size: 28px;
-        text-align: center;
-        position:relative;
-        left: 0px;
-        top:300px ;
-    }
+    /* collection style */
     .colection{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        position:relative;
-        left:-80px;
-        top:300px ;
+        grid-template-columns: repeat(1,1fr);
+        margin: 80px;
+        width: 300px;
     }
+    /* see more style */
     #see{
-        position:relative;
-        left:300px;
-        top:500px ;
+        position: relative;
+        left:350px;
+        top: 20px;
     }
-    #foot{
-        position:relative;
-        left:0px;
-        top:700px ;
-    }
-    
 }
 
 
-/* header style */
+/*-------------------------------
+--------- header style ----------
+---------------------------------*/
 .header{
+    margin-top: 120px;
     margin-left: 120px;
     margin-right: 120px;
-}
-nav {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     font-size: 24px;
-    
 }
 .anchor a{
     padding-left: 34px;
@@ -216,44 +182,50 @@ nav {
     left: 100px;
     
 }
-.menu{
+.menu a{
     position: relative;
-    top: 88px;
+    left: 100px;
     right: 50px;
-    font-size: 20px;
-}
-.anchor{
-    margin-top: 85px;
-}
-#cart{
-    padding-left: 34px;
     font-size: 16px;
+    padding-left: 34px;
     text-decoration: none;
     color: black;
-    margin-top: 95px;
+}
+.icon{
+    display: flex;
+}
+/* ---------------------------
+---------main style ------------
+------------------------------- */
+/* header section */
+.header-section{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    margin: 120px;
+}
+.top-blog{
+    width: 500px;
+}
+.image{
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    margin-left: 100px;
+}
+.image img{
+    transition: transform 2s ease-in;
+}
+.image img:hover{
+    transform:rotate(360deg)
 }
 
-.headline{
-    margin-top: 102px;
-}
-/* main style */
 .top-line{
     font-size:52px;
     font-weight: 700px;
-    margin-right: 120px;
-    position: relative;
-    left: 120px;
+    
 }
-.start-section{
-    display: flex;
-}
-.blogs{
-   padding-right:133px;
-   font-weight: 16px;
-   position: absolute;
-   left: 120px;
-   right: 600px;
-   top: 400px;   
+
+.button-line{
+   font-weight: 16px;   
 }
 .preebook{
     background-color: #E02C6D;
@@ -261,27 +233,23 @@ nav {
     border: none;
     border-radius: 41px;
     padding: 10px 24px;
-    position: absolute;
-    width: 196px;
-    height: 44px;
-    left: 120px;
-    top: 511px; 
     font-size: 16px;
 }
 .preebook .fas{
     margin-left: 8px;
     color: white;
 }
-.images{
-    background-image: url(images/Circle\ design.svg);
-    margin-right: 120px;
+.preebook:hover{
+    width: 200px;
 }
-.logos{
+
+/* logo section */
+.logo{
     display: flex;
     justify-content: space-between;
     border-top:1px solid lightgray;
     border-bottom: 1px solid lightgray;
-    margin: 120px 100px;
+    margin: 0px 100px;
     padding-top: 21px;
     padding-bottom: 48px;
 }
@@ -353,6 +321,37 @@ nav {
 .see-more .fas{
     padding-left: 10px;
     color: #E02C6D;
+}
+
+/* login style */
+
+.login{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #f6d6e2;
+    border-radius:50%;
+    padding: 50px 0;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
+.login-form input, button{
+    font-size: 1.3em;
+    margin-top: 15px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+    
+
+}
+.login-form button{
+    background-color: #E02C6D;
+    color: white;
+}
+ .login-form:hover{
+    width:300px;
 }
 
 /* footer style */
